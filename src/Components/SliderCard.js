@@ -11,7 +11,7 @@ import VolumeUp from '@material-ui/icons/VolumeUp';
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 350,
+    minWidth: 275,
   },
   input: {
     width: 42,
