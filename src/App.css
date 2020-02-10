@@ -2,6 +2,49 @@
   text-align: center;
 }
 
+.Container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.root {
+  margin-top: 20px;
+}
+.toogle {
+  background-color: grey;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+.slider-card {
+  background: rgb(15, 15, 15);
+  margin: 10px 17px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+.slider-actions {
+  background-color: rgb(15, 14, 14);
+  margin: 18px 17px 15px 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+.select-card {
+  background-color: grey;
+  margin-bottom: 20px;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
