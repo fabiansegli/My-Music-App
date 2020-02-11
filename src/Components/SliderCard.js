@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Slider from '@material-ui/core/Slider';
 import Input from '@material-ui/core/Input';
 import VolumeUp from '@material-ui/icons/VolumeUp';
+import SurroundSoundIcon from '@material-ui/icons/SurroundSound';
 
 const useStyles = makeStyles({
   root: {
@@ -60,6 +61,9 @@ export default function SliderCard() {
         <Typography  style={{color: 'white'}} className={classes.pos} color="textSecondary">
           Overrides all other sound settings in this application
         </Typography>
+        <SurroundSoundIcon>
+              <i class="material-icons">surround_sound</i>
+         </SurroundSoundIcon>
       </CardContent>
       </div>
       <CardActions className= 'slider-actions'>

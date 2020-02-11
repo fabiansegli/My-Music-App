@@ -11,6 +11,18 @@
 .root {
   margin-top: 20px;
 }
+.menu-icon {
+  display: inline-flex;
+  position: relative;
+
+}
+.setting-icon {
+  margin-left: 90%;
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
 .toogle {
   background-color: grey;
   width: fit-content;
