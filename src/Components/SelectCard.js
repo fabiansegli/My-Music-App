@@ -36,13 +36,22 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SelectCard() {
+export default function SelectCard(props) {
   const classes = useStyles();
   const [age, setAge] = React.useState('');
   const [open, setOpen] = React.useState(false);
 
   const handleChange = event => {
     setAge(event.target.value);
+       if(event.target.value == 10) {
+       props.soundQualityLow()
+    }else if(event.target.value == 20) {
+      props.soundQualityMedium()
+    }else {
+      props.soundQualityHigh()
+    }
+
+    
   };
 
   const handleClose = () => {
@@ -79,12 +88,10 @@ export default function SelectCard() {
                 value={age}
                 onChange={handleChange}
                 >
-                <MenuItem value={5}>
-                    <em>Default</em>
-                </MenuItem>
-                <MenuItem value={10}>Pop</MenuItem>
-                <MenuItem value={20}>Rock</MenuItem>
-                <MenuItem value={30}>Club</MenuItem>
+               
+                <MenuItem value={10}>Low</MenuItem>
+                <MenuItem value={20}>Medium</MenuItem>
+                <MenuItem value={30}>High</MenuItem>
                 </Select>
             </FormControl>
         </div>

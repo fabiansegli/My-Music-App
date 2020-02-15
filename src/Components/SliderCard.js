@@ -30,12 +30,17 @@ const useStyles = makeStyles({
   },
 });
 
-export default function SliderCard() {
+export default function SliderCard(props) {
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
 
   const handleSliderChange = (event, newValue) => {
     setValue(newValue);
+    if(newValue > 80) {
+      props.checkVolumeHigh()
+    }else {
+      props.checkVolumeLow()
+    }
   };
 
   const handleInputChange = event => {

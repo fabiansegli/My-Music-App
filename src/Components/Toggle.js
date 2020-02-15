@@ -26,11 +26,12 @@ const useStyles = makeStyles({
   },
 });
 
-export default function Toggle() {
+export default function Toggle(props) {
   const classes = useStyles();
   const [checked, setChecked] = React.useState(false);
   const toggleChecked = () => {
     setChecked(prev => !prev);
+  props.toggleOnline()
   };
 
   const bull = <span className={classes.bullet}>•</span>;
@@ -50,7 +51,7 @@ export default function Toggle() {
             <FormGroup>
                 <FormControlLabel
                     control={<Switch color = 'primary' checked={checked} onChange={toggleChecked} />}
-                    label="Normal"
+                   
                 />
             </FormGroup>
             </CardActions>
